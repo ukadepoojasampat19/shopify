@@ -1510,4 +1510,21 @@ A strong answer is:
 "No. Liquid is a server-side templating language. It executes on Shopify's server before the page is sent to the browser. Once the page is rendered, Liquid has finished its job. Any client-side interactions such as button clicks, form validation, image changes, or AJAX requests are handled by JavaScript running in the browser."
 
 How do you Ensure Cross-browser Compatibility with a Shopify Theme?
-->
+->"To ensure cross-browser compatibility in a Shopify theme, I start by writing clean semantic HTML, standards-compliant CSS, and reliable JavaScript. Since different browsers may render pages slightly differently, I test the theme in Chrome, Firefox, Safari, and Edge on both desktop and mobile devices. I verify important customer journeys such as browsing products, selecting variants, adding items to the cart, and navigating the store. I use browser developer tools to debug layout or JavaScript issues, and I make sure responsive layouts, images, and interactive features work consistently. Before deployment, I complete end-to-end testing so that customers have the same shopping experience regardless of the browser they use."
+
+"When a Shopify store is created, Shopify provides a default .myshopify.com domain. For a professional brand identity, merchants usually connect a custom domain purchased from a domain registrar. To do this, I configure the required DNS records, such as the A Record for the root domain and the CNAME Record for the www subdomain, so they point to Shopify. Then, from the Shopify Admin under Settings → Domains, I connect and verify the domain. Shopify automatically provisions an SSL certificate to enable HTTPS, and I set the custom domain as the primary domain. This ensures customers access the store through the branded domain while benefiting from secure communication."
+
+🎯 Interview Tip (This Will Impress the Interviewer)
+
+If the interviewer
+:
+
+"As a Shopify App Developer, do you usually configure custom domains?"
+
+A good answer is:
+
+"It depends on the project. Domain configuration is often handled by the merchant or a Shopify administrator, but as a developer I understand the DNS setup, how Shopify verifies domains, and how to troubleshoot common issues. This knowledge helps me collaborate effectively when stores are being launched or migrated."
+
+
+Have you Worked with Shopify Metafields? How did you use Them in Previous Projects?
+->"Yes, I'm familiar with Shopify Metafields. Metafields allow us to store custom information that isn't available in Shopify's standard fields. For example, if a merchant wants to display additional product details such as material, warranty, care instructions, or country of origin, these can be stored as product metafields. In a Shopify app, I can create or update metafields using the Shopify Admin API, and in a Shopify theme, those values can be displayed using Liquid. In my previous project, my primary work involved Shopify API integrations, React, Remix, and GraphQL. Although I didn't build a feature focused on metafields, I understand how to use them to extend Shopify's data model and display custom information on the storefront."

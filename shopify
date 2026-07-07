@@ -1508,3 +1508,6 @@ If an interviewer asks:
 A strong answer is:
 
 "No. Liquid is a server-side templating language. It executes on Shopify's server before the page is sent to the browser. Once the page is rendered, Liquid has finished its job. Any client-side interactions such as button clicks, form validation, image changes, or AJAX requests are handled by JavaScript running in the browser."
+
+How do you Ensure Cross-browser Compatibility with a Shopify Theme?
+->

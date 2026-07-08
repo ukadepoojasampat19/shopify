@@ -1528,3 +1528,73 @@ A good answer is:
 
 Have you Worked with Shopify Metafields? How did you use Them in Previous Projects?
 ->"Yes, I'm familiar with Shopify Metafields. Metafields allow us to store custom information that isn't available in Shopify's standard fields. For example, if a merchant wants to display additional product details such as material, warranty, care instructions, or country of origin, these can be stored as product metafields. In a Shopify app, I can create or update metafields using the Shopify Admin API, and in a Shopify theme, those values can be displayed using Liquid. In my previous project, my primary work involved Shopify API integrations, React, Remix, and GraphQL. Although I didn't build a feature focused on metafields, I understand how to use them to extend Shopify's data model and display custom information on the storefront."
+
+Can you Explain Your Process for Managing Inventory in Shopify?
+->"Inventory management in Shopify involves tracking the quantity of products available for sale. When a merchant creates a product, they can enable inventory tracking and specify the available quantity. As customers place orders, Shopify automatically reduces the inventory. If new stock arrives, the merchant can update the quantity manually through the Shopify Admin or programmatically using the Shopify Admin API. In applications that integrate with warehouse or ERP systems, inventory can be synchronized automatically. During development, I ensure inventory updates are authenticated, handle API errors properly, and verify that stock levels remain accurate to prevent overselling."
+
+Have you Implemented Custom Payment Gateways in Shopify?
+->"In my previous Shopify project, I did not implement a custom payment gateway. My primary responsibilities involved Shopify API integrations, React, Remix, Node.js, GraphQL, theme customization, and app development. However, I understand how Shopify's payment flow works. During checkout, Shopify securely communicates with the configured payment provider, processes the payment, and once the payment is successful, the order is created. If I needed to integrate with a supported payment provider or implement a supported payment extension in the future, I would follow Shopify's documentation and security guidelines."
+
+Q1. Why do we use Git?
+
+Answer
+
+Git tracks changes, allows developers to work safely, maintains version history, and makes collaboration easier.
+
+Q2. What is a Branch?
+
+Answer
+
+A branch is an independent line of development where new features or bug fixes can be built without affecting the main code.
+
+Q3. What is a Commit?
+
+Answer
+
+A commit is a saved snapshot of the project at a specific point in time, along with a descriptive message explaining the change.
+
+Q4. What is a Pull Request?
+
+Answer
+
+A Pull Request is a request to merge code from one branch into another after review and approval.
+
+Q5. What is a Merge Conflict?
+
+Answer
+
+A merge conflict occurs when Git cannot automatically combine changes because the same part of a file was modified differently in two branches. The developer resolves the conflict manually.
+
+⭐ Best 2-Minute Interview Answer
+
+"In Shopify development, I use Git for version control and GitHub for collaboration. For every new feature or bug fix, I create a separate feature branch so the main branch remains stable. After implementing and testing my changes, I commit them with meaningful commit messages and push the branch to GitHub. I then create a pull request so team members can review the code before it is merged. If merge conflicts occur, I resolve them carefully and retest the affected functionality. This workflow helps maintain code quality, supports teamwork, and ensures that Shopify themes and apps can be developed safely without disrupting the production store."
+
+Can you Explain the Difference Between Filters and Tags in Liquid?
+->"In Shopify Liquid, Tags and Filters serve different purposes. Tags are used to control the logic and flow of the template. They perform actions such as looping through products, checking conditions with if, assigning variables, or rendering snippets. Filters, on the other hand, are used to modify or format data before displaying it. For example, I can use the money filter to display a product price in the correct currency format or the upcase filter to convert a product title to uppercase. In a typical Shopify theme, I often use Tags to decide what should be displayed and Filters to control how the displayed data looks."
+
+How can you Create a Custom Shopify Page Template?
+->"In Shopify Online Store 2.0, I create a custom page by first creating a JSON template, such as page.about.json. The JSON file doesn't contain HTML; it acts as a configuration file that tells Shopify which sections should be displayed on that page. I then create a corresponding section, for example about-content.liquid, where I write the HTML, Liquid, and any required styling or dynamic content. Finally, I assign the page.about template to the About Us page from the Shopify Admin. This approach keeps the theme modular, reusable, and allows merchants to customize page layouts through the Theme Editor."
+
+Can you Explain the Process of Debugging a Broken Theme or App?
+->"Whenever I debug a broken Shopify theme or app, I follow a structured process. First, I reproduce the issue to understand exactly what is happening. Then I identify whether the problem is in the theme or the app. I use browser Developer Tools to check the console for JavaScript errors and the Network tab for failed API requests. If it's a theme issue, I inspect the Liquid templates and frontend code. If it's an app issue, I verify API calls, authentication, permissions, and backend logs. Once I identify the root cause, I implement the fix, test the affected functionality, and then verify related features to ensure no new issues were introduced."
+
+What are Some Common Technical Issues Faced by Shopify Users?
+->"Whenever I face an issue, I first reproduce it, narrow down whether it's related to the frontend, backend, Shopify APIs, or configuration, identify the root cause using browser Developer Tools and logs, fix it, and then verify that the solution doesn't introduce any new issues."
+
+What are the Limitations of Shopify's Built-in Functionality, and How can you Work Around Them?
+->"Shopify provides a strong foundation for e-commerce, but businesses often have unique requirements. When the built-in functionality isn't sufficient, I extend the platform using Shopify's supported customization options such as Liquid, metafields, APIs, webhooks, Shopify Functions, app extensions, or third-party integrations. This allows me to meet business needs while staying within Shopify's recommended architecture."
+
+What are the Limitations of Shopify's Built-in Functionality, and How can you Work Around Them?
+->"Shopify provides a strong foundation for e-commerce, but businesses often have unique requirements. When the built-in functionality isn't sufficient, I extend the platform using Shopify's supported customization options such as Liquid, metafields, APIs, webhooks, Shopify Functions, app extensions, or third-party integrations. This allows me to meet business needs while staying within Shopify's recommended architecture."
+
+What are the Best Practices for Managing a Shopify Store's Data and Content?
+->"To manage a Shopify store effectively, I keep product information well organized using collections, tags, and metafields wherever additional product details are required. I optimize images for faster loading, create reusable sections and snippets to keep the theme maintainable, and ensure inventory remains accurate. I also follow security best practices by using OAuth, validating webhooks, storing tokens securely, and using HTTPS. Before deploying any changes, I thoroughly test the storefront on different devices and browsers. My goal is to keep the store organized, secure, performant, and easy for both merchants and customers to use."
+
+How can you Provide Effective Customer Support as a Shopify Support Advisor?
+->“Effective customer support involves understanding customer needs, providing clear and concise solutions, and offering timely responses. I use support tools like help desks, maintain a knowledge base for common issues, and ensure clear communication to resolve problems efficiently and maintain customer satisfaction.”
+
+What are Some Techniques for Troubleshooting Liquid code?
+->"I first check the page source or temporarily output the Liquid data using {{ object | json }}. If the correct HTML is already being generated by Liquid but the UI still isn't working, the problem is likely in JavaScript or CSS. If the expected HTML isn't generated at all, then I investigate the Liquid template, objects, conditions, or section configuration."
+
+Can you Explain the use of Shopify's CSS Frameworks and JavaScript Libraries?
+->"Shopify doesn't provide its own CSS framework or JavaScript library. Instead, it allows developers to build themes using HTML, CSS, JavaScript, and Liquid. CSS is used to style the storefront and make it responsive, while JavaScript is used to add interactivity, such as updating product variants, handling the cart, validating forms, and making AJAX requests. Depending on the project requirements, developers can also use frameworks like Bootstrap or Tailwind CSS for styling and libraries like Swiper.js for sliders. In my project, I mainly worked with custom CSS, Vanilla JavaScript, and Liquid to build a responsive and performant Shopify storefront."
